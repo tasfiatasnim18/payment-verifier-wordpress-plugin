@@ -1,0 +1,183 @@
+{
+  "version": "3.1.2-rc1",
+  "source_phase": 34,
+  "static_checks": {
+    "plugin_bootstrap": true,
+    "direct_access_guards": true,
+    "rest_permission_callbacks_present_somewhere": true,
+    "wpdb_prepare_usage": true,
+    "wp_error_paths": true,
+    "capability_checks": true,
+    "nonce_or_equivalent_admin_protection": true,
+    "idempotency": true,
+    "transition_guard": true,
+    "transaction_tracking": true,
+    "audit_support": true,
+    "correlation_id": true,
+    "woocommerce_integration": true,
+    "staging_runbook": true,
+    "failure_matrix": true,
+    "idempotency_doc": true,
+    "integrity_doc": true,
+    "no_obvious_hardcoded_secrets": true,
+    "no_obvious_production_credentials": true,
+    "clean_package": true
+  },
+  "secret_scan_hits": [],
+  "production_marker_hits": [],
+  "excluded_artifacts": [],
+  "file_count": 30,
+  "files": [
+    {
+      "path": "PHASE31_SECURITY_AUDIT.md",
+      "sha256": "f4a8520691237f4c936ccf0627a985d42cfd2953761919ae4c3d865a4c92b218",
+      "bytes": 1057
+    },
+    {
+      "path": "PHASE32_DATABASE_INTEGRITY.md",
+      "sha256": "eff1d3d2e216040d98ef4bf68690abad2d4270e921af705a0de7731de9eb1d4e",
+      "bytes": 1156
+    },
+    {
+      "path": "PHASE33_FAILURE_MATRIX.md",
+      "sha256": "82c91acee0638a173a5ad545c2164ff19ce7ee34ac52ab8beab38d84af67495a",
+      "bytes": 1100
+    },
+    {
+      "path": "PHASE34_IDEMPOTENCY.md",
+      "sha256": "e3577c8c031609800d2ccffa97e79f374c3b8ce62e26384ec48a49dad8bb43f3",
+      "bytes": 1262
+    },
+    {
+      "path": "README.md",
+      "sha256": "5dee274503caaadc381a1cbd5d7b2a3d9d1515b26490c18de55916a5501764f8",
+      "bytes": 644
+    },
+    {
+      "path": "RELEASE_CANDIDATE_CHECKLIST.md",
+      "sha256": "c6e9287eb5d6e7ddf3fa91d8c13662d6ed2dba0fa8b87ac41234ca57d5111a1e",
+      "bytes": 1278
+    },
+    {
+      "path": "RELEASE_CANDIDATE_MANIFEST.json",
+      "sha256": "7d3323f5ecf1d2a3bd477f82af8a8c2d5741e79a44dbe58c4bc67dc7db8a3e09",
+      "bytes": 5437
+    },
+    {
+      "path": "STAGING_RUNBOOK.md",
+      "sha256": "6cf78d51178c4023d88000dc710213cc55f64d94bc458263bd28c2daf08d4c1f",
+      "bytes": 1139
+    },
+    {
+      "path": "includes/class-wc-gateway-payment-verifier.php",
+      "sha256": "2f0e387ba4580b510d059c4249343a1fbf2b37d8a95134bc28f97f589455b59f",
+      "bytes": 5337
+    },
+    {
+      "path": "includes/order-binding.php",
+      "sha256": "6e343773d10963990dfff3cb0291c48778a2fb1b853de374e9a9a9b6c5202ff2",
+      "bytes": 867
+    },
+    {
+      "path": "includes/pv-activation.php",
+      "sha256": "4626c1b2d8185ec0508eec0c68410022b309ce6e2c645665aabeb7e95fec05c9",
+      "bytes": 223
+    },
+    {
+      "path": "includes/pv-api-hardening.php",
+      "sha256": "ffdc6191cfcb140e9a366a74459ec8f8590b63f4579dc848ac0bf25c058fccb8",
+      "bytes": 2133
+    },
+    {
+      "path": "includes/pv-idempotency.php",
+      "sha256": "f2af92bc6ebf66e51f0c67da0ec2f20fc1a2ce2d375a6714c5c3b990ce5075a9",
+      "bytes": 4020
+    },
+    {
+      "path": "includes/pv-integrity-check.php",
+      "sha256": "0ed9ed966e8b1b8fc8b4b1047bbd14a8cca78659e5d54df1359b511de53c7623",
+      "bytes": 1484
+    },
+    {
+      "path": "includes/pv-order-transition-guard.php",
+      "sha256": "794668cb4df7694a12cb794d076dcee51192f273faef95cd9b0618d4a94b6c91",
+      "bytes": 2281
+    },
+    {
+      "path": "includes/pv-staging-diagnostics.php",
+      "sha256": "126e7c685676de4904dcfa6038adb019a241ef935ee77a64869942c31fa204a1",
+      "bytes": 3451
+    },
+    {
+      "path": "payment-verifier.php",
+      "sha256": "bdee3325ad88d3c2766a322523c69c4324f642ca5422c3e597ef766390492a9f",
+      "bytes": 63202
+    },
+    {
+      "path": "tests/test_api_contract.py",
+      "sha256": "e66165036570a18a9f229cd3579ccc14ee2b685269a79af26ef9e1df4e4f7788",
+      "bytes": 477
+    },
+    {
+      "path": "tests/test_phase10_source.py",
+      "sha256": "c79868054d9472b8e5ca47827fe1001515241c64f9ac380bf05e57855ce47c2e",
+      "bytes": 647
+    },
+    {
+      "path": "tests/test_phase11_source.py",
+      "sha256": "5cf282b22292b07766bdc0bd4820207ea79e4cabe8ea68e85e01f1ab3f875fb8",
+      "bytes": 241
+    },
+    {
+      "path": "tests/test_phase14_source.py",
+      "sha256": "fe323e8d81188f9313660063cfdafaab47fec0dd8ce13594743d7fa3fb05ae29",
+      "bytes": 332
+    },
+    {
+      "path": "tests/test_phase15_source.py",
+      "sha256": "f7d4781f113c492bb8b0d731722563bfea086a3cc86efaa72f0639735e9b1e32",
+      "bytes": 357
+    },
+    {
+      "path": "tests/test_phase16_source.py",
+      "sha256": "45602cabf6d4fadbfe994965efbc5c38549163d0ad3164e69e4a276ec1e4dd85",
+      "bytes": 434
+    },
+    {
+      "path": "tests/test_phase18_source.py",
+      "sha256": "5092c47f0970be4160f87f7c2c822043bb7b0e732d66dbfa169c91448ce0096f",
+      "bytes": 427
+    },
+    {
+      "path": "tests/test_phase19_source.py",
+      "sha256": "db8807d616a543265675ac8e7e3b41ded98f814dae84cf8f7956f12015f463bf",
+      "bytes": 376
+    },
+    {
+      "path": "tests/test_phase20_source.py",
+      "sha256": "81183725a0261f35e02b3cea7e71317587cb6abf3553cabb1dbbab42e24460ba",
+      "bytes": 585
+    },
+    {
+      "path": "tests/test_phase21_source.py",
+      "sha256": "c3663ca001e72fd23c2ccd0db689a41efa585f0def312d036bd4736cced93330",
+      "bytes": 419
+    },
+    {
+      "path": "tests/test_phase22_source.py",
+      "sha256": "7bb1e203e13f7e3f1a4bfbcc3d638aed3d15a43ad2a6c8e35a42c362f9eae730",
+      "bytes": 450
+    },
+    {
+      "path": "tests/test_phase8_source.py",
+      "sha256": "b75f1805a90e491cfd74bb9598a630bdfa9052ed2a223d8ef028c60e42787fd6",
+      "bytes": 416
+    },
+    {
+      "path": "tests/test_phase9_source.py",
+      "sha256": "fa333d38876c159c9a114ed2bd5cc842d764ad010e193b88b089525fd5e5d03f",
+      "bytes": 708
+    }
+  ],
+  "dynamic_staging_required": true
+}
